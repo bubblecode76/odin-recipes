@@ -5,16 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dessert Recipes</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .column{
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Some Dessert Recipes</h1>
+        <h1 style="font-family: Garamond; font-size: 60px; text-align:center; background-color:aquamarine; ">Some Dessert Recipes</h1>
+        <p style="color:grey; text-align:center;"><i>Click on the picture for the recipe</i></p>
     </header>
 
     <main>
-        <p><a href="recipes/classic-french-toast.html" target="_blank">Classic French Toast</a></p>
-        <p><a href="recipes/iced-coffee-popsicles.html" target="_blank">Iced Coffee Popsicles</a></p>
-        <p><a href="recipes/strawberry-chocolate-trifle.html" target="_blank">Strawberry Chocolate Trifle</a></p>
+
+        <div class="row">
+            <div class="column">
+                <a href="recipes/classic-french-toast.html" target="_blank">
+                   <img src="images\frenchToast.jpg" width="100%">
+                </a>
+                <p style="text-align:center ;">Classic French Toast</p>
+            </div>
+
+            <div class="column">
+                <a href="recipes/iced-coffee-popsicles.html" target="_blank">
+                    <img src="images\popsicles.jpg" width="100%" >
+                </a>
+                <p style="text-align:center ;">Iced Coffee Popsicles</p>
+            </div>
+
+            <div class="column">
+                <a href="recipes/strawberry-chocolate-trifle.html" target="_blank">
+                    <img src="images\trifle.jpg" width="100%">
+                </a>
+                <p style="text-align:center ;">Strawberry Chocolate Trifle</p>
+            </div>
+        </div>
+
     </main>
 </body>
 </html>
